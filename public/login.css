@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #4052D6;
+    --secondary-color: #D99EC2;
+    --dark-default: #262626;
+    --light-default: #f9f9f9;
+}
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

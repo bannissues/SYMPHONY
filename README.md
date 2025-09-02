@@ -6,15 +6,15 @@ Este projeto tem o objetivo de, de forma fictícia (apesar de um desejo profundo
 
 A princípio, as tecnologias utilizadas serão HTML, CSS, Javascript para o front-end e funcionalidades básicas, e PHP e SQL para o back-end, banco de dados e ligação de formulários com o banco.
 
-A paleta básica do site será:  
-:root {
---primary-color: #4052D6
---secondary-color: #D99EC2
---dark-default: #262626
---light-default: #f9f9f9
-}
+> PALETA:  
+> :root {
+> --primary-color: #4052D6
+> --secondary-color: #D99EC2
+> --dark-default: #262626
+> --light-default: #f9f9f9
+> }
 
-Fontes:
+> FONTES:
 
 - Títulos:
 
@@ -53,3 +53,10 @@ font-style: normal;
 }
 
 </style>
+
+> LOGIN/CADASTRO:
+
+- Duas páginas separadas com estilo semelhante, funcionalidades implementadas:
+  Validação de formulário com REGEX (JS)
+  Autenticação 2FA
+  Ligação do HTML com PHP

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYMPHONY</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <h1>Login</h1>
+        <form action="process_login.php" method="POST">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Entrar</button>
+        </form>
+
+    </main>
+</body>
+
+</html>
