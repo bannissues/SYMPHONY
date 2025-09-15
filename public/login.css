@@ -34,8 +34,7 @@ body {
 .container {
     background: linear-gradient(to top, var(--dark-default), transparent);
     border-radius: 10px;
-
-    height: 640px;
+    height: 655px;
     width: 350px;
     text-align: center;
 }
@@ -49,7 +48,6 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-
     border-radius: 0 0 20px 20px;
     transform: scaleY(0.8);
 }
@@ -64,9 +62,7 @@ body {
     font-family: 'Astloch', cursive;
     color: var(--light-default);
     text-align: center;
-    margin-bottom: -6px;
-    position: relative;
-    z-index: 1;
+    margin-bottom: 10px;
 }
 
 .container_title h1 {
@@ -86,7 +82,7 @@ form {
 
 .campo i {
     position: absolute;
-    top: 37%;
+    top: 48%;
     left: 10px;
     transform: translateY(-50%);
     color: var(--secondary-color);
@@ -114,10 +110,8 @@ input:focus {
     border-color: var(--light-default);
 }
 
-/* botão mais estreito que os inputs */
 button {
     width: 70%;
-    /* menor que os campos */
     padding: 8px;
     background-color: var(--secondary-color);
     border: none;
@@ -125,14 +119,12 @@ button {
     color: var(--dark-default);
     font-size: 20px;
     font-family: "Astloch", system-ui;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-
     cursor: pointer;
     transition: background-color 0.2s ease-in-out, color 0.4s ease-in-out;
     margin: 10px auto 15px auto;
     display: block;
-    /* pra permitir centralizar */
 }
 
 button:hover {
@@ -141,18 +133,27 @@ button:hover {
 }
 
 .container a {
-    margin-top: 10px;
     color: var(--secondary-color);
     cursor: pointer;
     text-decoration: none;
     transition: 0.2s ease;
     font-size: 14px;
+    font-weight: 600;
     margin-bottom: 20px;
     font-family: "Astloch", system-ui;
     font-size: 20px;
     font-style: normal;
+    margin-bottom: 12px;
 }
 
 .container a:hover {
     color: var(--light-default);
+}
+
+.error-message {
+    color: #ff5c5c;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding: 10px;
 }

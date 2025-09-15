@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+// Inicia a sessão para poder acessar as variáveis de sessão
+session_start();
+?><!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -22,18 +25,27 @@
             <h1><span>S</span>ymphony</h1>
         </div>
 
-        <form action="process_login.php" method="POST">
+        <?php
+        // verifica se existe uma mensagem de erro na sessão
+        if (isset($_SESSION['login_error'])) {
+            // exibe a mensagem de erro
+            echo '<p class="error-message">' . htmlspecialchars($_SESSION['login_error']) . '</p>';
+            // remove a mensagem da sessão para não ser exibida novamente
+            unset($_SESSION['login_error']);
+        }
+        ?>
+        <form action="../auth/process_login.php" method="POST" novalidate>
             <div class="campo">
                 <i class="fas fa-user"></i>
-                <input type="text" id="username" name="username" placeholder="Usuário" required><br><br>
+                <input type="text" id="username" name="username" placeholder="Usuário" required>
             </div>
             <div class="campo">
                 <i class="fas fa-lock"></i>
-                <input type="password" id="password" name="password" placeholder="Senha" required><br><br>
+                <input type="password" id="password" name="password" placeholder="Senha" required>
             </div>
             <button type="submit">Entrar</button>
         </form>
-        <a href="#página de cadastro">Cadastre-se</a>
+        <a href="register.php">Cadastre-se</a>
 
     </main>
 </body>
